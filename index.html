@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naveen's Portfolio</title>
     <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -78,25 +79,25 @@
                     <h3>Contact Information</h3>
                     <ul class="contact-links">
                         <li>
-                            <i>📱</i>
+                            <i class="fa-solid fa-phone"></i>
                             
                             <span>Mobile No - +91 9490728548</span>
                         </li>
                         <li>
-                            <i>📍</i>
+                            <i class="fa-solid fa-location-dot" id="location-icon"></i>
                             <span>Amritapuri, Kerala</span>
                         </li>
                         <li>
-                            <i>📧</i>
-                            <a href="mailto:naveensrinivas282@gmail.com">naveensrinivas282@gmail.com</a>
+                            <i class="fa-solid fa-envelope" id="envelope-icon"></i>
+                            <a href="mailto:naveensrinivas282@gmail.com">email - naveensrinivas282@gmail.com</a>
                         </li>
                         <li>
-                            <i>🔗</i>
-                            <a href="https://github.com/naveen28204280" target="_blank">github.com/naveen28204280</a>
+                            <i class="fa-brands fa-github" id="github-icon"></i>
+                            <a href="https://github.com/naveen28204280" target="_blank">Github</a>
                         </li>
                         <li>
-                            <i>🔗</i>
-                            <a href="https://linkedin.com/in/naveen-srinivas-623667320" target="_blank">linkedin.com/in/naveen-srinivas-623667320</a>
+                            <i class="fa-brands fa-linkedin" id="linkedin-icon"></i>
+                            <a href="https://linkedin.com/in/naveen-srinivas-623667320" target="_blank">Linkedin</a>
                         </li>
                     </ul>
                 </div>
@@ -127,35 +128,15 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/naveen28204280 target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/naveen-srinivas-623667320" target="_blank">LinkedIn</a>
+                <a href="https://github.com/naveen28204280 target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/naveen-srinivas-623667320" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2025 Naveen. All Rights Reserved.</p>
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById('main-nav');
-            nav.classList.toggle('active');
-        }
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('main-nav').classList.remove('active');
-            });
-        });
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 60,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
